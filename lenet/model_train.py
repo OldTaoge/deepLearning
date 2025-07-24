@@ -155,8 +155,8 @@ def matplot_acc_loss(train_process):
     plt.ylabel("loss")
 
     plt.subplot(1,2,2)
-    plt.plot(train_process["epoch"], train_process.train_acc_all, 'ro-', label= "train loss")
-    plt.plot(train_process["epoch"], train_process.val_acc_all, 'bs-', label= "val loss")
+    plt.plot(train_process["epoch"], train_process.train_acc_all, 'ro-', label= "train acc")
+    plt.plot(train_process["epoch"], train_process.val_acc_all, 'bs-', label= "val acc")
     plt.legend()
     plt.xlabel("epoch")
     plt.ylabel("acc")
