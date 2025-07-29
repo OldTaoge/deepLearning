@@ -165,7 +165,7 @@ def matplot_acc_loss(train_process):
     
 
 if __name__ == "__main__":
-    resNet18 = ResNet18()
+    resNet18 = ResNet18(in_channels=1, num_classes=10)
     train_dataloader, val_dataloader = train_val_data_process()
     train_process = train_model_process(resNet18, train_dataloader, val_dataloader, 10)
     matplot_acc_loss(train_process)
